@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_step"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:itemIconSize="20dp"
+        app:itemIconTint="@drawable/bottom_navigation_item_selector"
+        app:itemTextAppearanceActive="@style/bottom_tab_title_active"
+        app:itemTextAppearanceInactive="@style/bottom_tab_title_inactive"
+        app:itemTextColor="@drawable/bottom_navigation_item_selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/main_bottom_navigation" />
+
+</LinearLayout>

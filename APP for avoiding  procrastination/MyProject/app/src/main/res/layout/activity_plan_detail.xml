@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PlanDetailActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Activity Detail"
+        tools:ignore="MissingConstraints"/>
+    <TextView
+        android:id="@+id/tv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:text="Del"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_an"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Activity Name:  "
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/et_an"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/tv_an"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="6dp"
+        app:layout_constraintTop_toTopOf="@+id/tv_an"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_an"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_sd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/et_an"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="StartDate:  "
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/et_sd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/et_an"
+        app:layout_constraintRight_toRightOf="@+id/et_an"
+        app:layout_constraintTop_toTopOf="@+id/tv_sd"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_sd"
+        tools:ignore="MissingConstraints" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_sd"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        app:layout_constraintRight_toRightOf="@+id/et_sd"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/et_sd"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/et_sd"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:src="@android:drawable/ic_menu_my_calendar"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/tv_ed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/et_sd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Deadline:  "
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/et_ed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/et_sd"
+        app:layout_constraintRight_toRightOf="@+id/et_sd"
+        app:layout_constraintTop_toTopOf="@+id/tv_ed"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_ed"
+        tools:ignore="MissingConstraints" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_ed"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        app:layout_constraintRight_toRightOf="@+id/et_ed"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/et_ed"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/et_ed"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:src="@android:drawable/ic_menu_my_calendar"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/tv_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/et_ed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Activity classification:  "
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@+id/tv_ac"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_ac"
+        app:layout_constraintLeft_toRightOf="@+id/tv_ac"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ac"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Note:  "
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        app:layout_constraintTop_toTopOf="@+id/tv_n"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_n"
+        app:layout_constraintLeft_toRightOf="@+id/tv_n"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv_n"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Reminder interval:  "
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_rgd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="left|center_vertical"
+        app:layout_constraintTop_toTopOf="@+id/tv_rg"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_rg"
+        app:layout_constraintLeft_toRightOf="@+id/tv_rg"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rgd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:text="DONE"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_tc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/btn_done"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="thumb count:  "
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/et_tc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@+id/et_sd"
+        app:layout_constraintRight_toRightOf="@+id/et_sd"
+        app:layout_constraintTop_toTopOf="@+id/tv_tc"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tc"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_dd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Done date:  "
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/et_dd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@+id/et_sd"
+        app:layout_constraintRight_toRightOf="@+id/et_sd"
+        app:layout_constraintTop_toTopOf="@+id/tv_dd"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_dd"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <com.sackcentury.shinebuttonlib.ShineButton
+        android:id="@+id/btn_shine"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_dd"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone"
+        android:layout_marginRight="20dp"
+        app:btn_color="@android:color/darker_gray"
+        app:btn_fill_color="#f26d7d"
+        app:siShape="@raw/heart"
+        android:elevation="10dp"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_dd"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="comment"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="Please enter your comment"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="@+id/btn"
+        app:layout_constraintBottom_toBottomOf="@+id/btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn"
+
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
